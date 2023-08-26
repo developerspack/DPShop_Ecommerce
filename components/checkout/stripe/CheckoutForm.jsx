@@ -125,7 +125,7 @@ export default function CheckoutForm() {
         elements,
         confirmParams: {
           // Make sure to change this to your payment completion page
-          return_url: `${process.env.NEXT_PUBLIC_URL}/CheckoutSuccess`,
+          return_url: "https://dpshopecommerce.vercel.app/CheckoutSuccess",
         },
       })
       .then(SaveOrder());
