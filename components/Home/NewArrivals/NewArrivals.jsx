@@ -5,7 +5,7 @@ import NewCard from "./NewCard";
 const NewArrivals = () => {
   const { products } = FetchProductsReviews("products");
   const FilteredProducts = products.filter(
-    (product) => product.Offer === "Yes"
+    (product) => product.Offer === "true"
   );
   const SlicedDeal = FilteredProducts.slice(0, 1);
   // new
